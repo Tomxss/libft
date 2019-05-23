@@ -6,11 +6,11 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:08:44 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/21 13:10:05 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/23 11:50:43 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 int	ft_islower(int i)
 {
