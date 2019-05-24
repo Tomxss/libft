@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:35:40 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/24 09:38:33 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/24 17:14:09 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,3 @@ char	*ft_strcpy(char *dst, const char *src)
 	*(dst + i) = '\0';
 	return (dst);
 }
-
-

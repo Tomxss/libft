@@ -6,9 +6,11 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:44:43 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/24 09:50:54 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/24 18:09:26 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
