@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 17:08:13 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/24 17:08:59 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/24 17:10:52 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ size_t		ft_strlen(const char *s)
 	size_t		i;
 
 	i = -1;
-	while (*(s + ++i));
-	return (i);
+	while (*(s + ++i))
+		return (i);
 }
