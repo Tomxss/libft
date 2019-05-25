@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 10:31:16 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/25 16:33:59 by tcoetzee         ###   ########.fr       */
+/*   Created: 2019/05/25 15:03:35 by tcoetzee          #+#    #+#             */
+/*   Updated: 2019/05/25 15:04:24 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(const char *str1,const char *str2)
+void	ft_strclr(char *s)
 {
-	while ((*str1 != '\0' && *str2 != '\0') && *str1 == *str2)
+	if (s)
 	{
-		str1++;
-		str2++;
+		ft_bzero(s, ft_strlen(s));
 	}
-	if (*str1 == *str2)
-		return (0);
-	return (*str1 - *str2);
 }

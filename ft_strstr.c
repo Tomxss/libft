@@ -1,25 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 10:31:16 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/25 16:33:59 by tcoetzee         ###   ########.fr       */
+/*   Created: 2019/05/24 19:08:03 by tcoetzee          #+#    #+#             */
+/*   Updated: 2019/05/24 19:15:20 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(const char *str1,const char *str2)
+char	*ft_strstr(const char *big, const char *little)
 {
-	while ((*str1 != '\0' && *str2 != '\0') && *str1 == *str2)
+	int	i;
+	int	j;
+	int	k;
+	int	good;
+
+	if (!ft_strlen(little))
+		return ((char *)big);
+	i = -1;
+	good = 0;
+	while (*(big + i) && !good)
 	{
-		str1++;
-		str2++;
+		if (*(big + i) == *(little + 0))
+		{
+			j = 0;
+			k = i;
+			good = 1;
+			while (*(little + j))
+				if (*(little + j++) != *(big + k++))
+					good = 0;
+			if (good)
+				return ((char *)big + i);
+		}
 	}
-	if (*str1 == *str2)
-		return (0);
-	return (*str1 - *str2);
+	return (NULL);
 }
