@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:55:56 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/26 12:36:32 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/26 13:37:03 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 
-char	*ft_strcpy(char *dest,const char *src);
+char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
@@ -77,7 +77,5 @@ char	*ft_strtrim(char const *s);
 
 void	ft_putchar_fd(char c, int fd);
 int		ft_countwords(char const *str, char c);
-
-
 
 #endif
