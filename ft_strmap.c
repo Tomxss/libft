@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 15:21:17 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/25 15:27:58 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/26 12:56:13 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,4 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	while (*(s + ++i))
 		*(new_str + i) = f(*(s + i));
 	return (new_str);
-
 }
-
