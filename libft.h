@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:55:56 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/25 17:04:19 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/26 12:36:32 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-
-# define IS_SPACE(x) (x == ' ' || x == '\t' || x== '\r' || x == '\f')
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
