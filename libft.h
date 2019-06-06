@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:55:56 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/26 14:47:56 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/06 13:26:21 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int					ft_isdigit(int i);
 int					ft_isalpha(int i);
 int					ft_islower(int i);
 int					ft_isupper(int i);
+int					ft_isascii(int c);
+char				*ft_strcat(char *s1, const char *s2);
 
 int					ft_isprint(int c);
 
@@ -48,6 +50,7 @@ char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strstr(const char *big, const char *little);
+char				*ft_strchr(const char *s, int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 size_t				ft_strlen(const char *s);
