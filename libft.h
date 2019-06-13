@@ -18,6 +18,7 @@
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
+int				ft_ccpy(char **dst, char *src char c);
 
 int					ft_isalnum(int c);
 int					ft_isalpha(int i);
