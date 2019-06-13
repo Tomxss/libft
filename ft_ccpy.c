@@ -16,7 +16,7 @@ int	ft_ccpy(char **dst, char *src, char c)
 		return (0);
 	while (src[count] && count < i)
 	{
-		if (!(*dst = ft_strjoinch(*dst, src[count])))
+		if (!(*dst = ft_strjoinchr(*dst, src[count])))
 			return (0);
 		count++;
 	}
