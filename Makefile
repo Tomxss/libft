@@ -6,7 +6,7 @@
 #    By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/21 12:12:08 by tcoetzee          #+#    #+#              #
-#    Updated: 2019/05/21 12:15:34 by tcoetzee         ###   ########.fr        #
+#    Updated: 2019/06/18 09:53:25 by tcoetzee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,16 +20,16 @@ OBJ	= $(SRC:%.c=%.o) #everything in SRC, BUT change .c to .o
 all: $(NAME)# Does all exist, if it does is it up-to-date
 	
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-		
+	@ar rcs $(NAME) $(OBJ)
+	@echo "stuff gets made"	
 $(OBJ): $(SRC)
-	gcc $(CFLAGS) $(SRC)
+	@gcc $(CFLAGS) $(SRC)
 
 clean: 
-	rm -f $(OBJ)	# remove output files
+	@rm -f $(OBJ)	# remove output files
 
 fclean: clean
-	rm -f $(NAME)	# remove libft.a
+	@rm -f $(NAME)	# remove libft.a
 
 re: fclean all
 

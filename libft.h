@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:55:56 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/06 13:26:21 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 08:56:29 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
-int				ft_ccpy(char **dst, char *src, char c);
+int					ft_ccpy(char **dst, char *src, char c);
 char				*ft_strjoinchr(char const *s1, char c);
 int					ft_isalnum(int c);
 int					ft_isalpha(int i);
