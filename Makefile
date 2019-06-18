@@ -12,15 +12,16 @@
 
 NAME	= libft.a
 CFLAGS	= -Wall -Werror -Wextra -I. -c
-SRC	:= $(wildcard *.c) 
-
+SRC	= $(wildcard ft_*.c)
 OBJ	= $(SRC:%.c=%.o) #everything in SRC, BUT change .c to .o
 
-all : $(NAME)
+.PHONY: clean
 
-$(NAME): $(OBJ)	
+all: $(NAME)# Does all exist, if it does is it up-to-date
+	
+$(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
-
+		
 $(OBJ): $(SRC)
 	gcc $(CFLAGS) $(SRC)
 
@@ -28,7 +29,7 @@ clean:
 	rm -f $(OBJ)	# remove output files
 
 fclean: clean
-	rm -f $(NAME)	# remove all
+	rm -f $(NAME)	# remove libft.a
 
 re: fclean all
 
