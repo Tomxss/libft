@@ -6,7 +6,7 @@
 /*   By: tcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:55:56 by tcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/18 08:56:29 by tcoetzee         ###   ########.fr       */
+/*   Updated: 2019/07/04 08:35:22 by tcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 
+# define BUFF_SIZE 42
+
+# define CHECK(x) if (!x) return (-1);
+
+int					get_next_line(const int fd, char **line);
 int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_ccpy(char **dst, char *src, char c);
